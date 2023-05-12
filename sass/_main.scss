@@ -27,6 +27,7 @@ main {
         font-size: 1.2rem;
         color: $grayish-Blue;
       }
+      /*PRODUCTS*/
       .products {
         @include flex;
         article {
@@ -50,6 +51,7 @@ main {
       }
     }
   }
+  /*ARTICLE*/
   .latest-article {
     background-color: $very-Light-Gray;
     padding: 4em 0 ;

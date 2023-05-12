@@ -10,6 +10,10 @@ img {
 /*font weight*/
 /*breakpoints*/
 /*width*/
+/*HEADER */
+.header {
+  /*HERO BUDGETING SECTION*/
+}
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -154,6 +158,9 @@ img {
   box-sizing: border-box;
 }
 
+main {
+  /*ARTICLE*/
+}
 main .container {
   background-color: hsl(220, 16%, 96%);
   padding: 6em 0;
@@ -161,6 +168,7 @@ main .container {
 main .container .services {
   width: 75%;
   margin: auto;
+  /*PRODUCTS*/
 }
 main .container .services__heading {
   font-size: 2.5rem;

@@ -1,6 +1,7 @@
 @use "../sass/mixins" as *;
 @use "../sass/variable" as *;
 
+/*HEADER */
 .header {
   
   &__top {
@@ -54,6 +55,7 @@
   }
   }
 
+  /*HERO BUDGETING SECTION*/
   &__hero {
     background-color: $very-Light-Gray;
     background-image: url(/images/bg-intro-desktop.svg);
