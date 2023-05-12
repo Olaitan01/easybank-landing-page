@@ -50,7 +50,7 @@ img {
 .header__request-btn {
   border: none;
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-  padding: 0.5em 2em;
+  padding: 1em 2em;
   border-radius: 1.5em;
   font-size: 1rem;
   color: hsl(0, 0%, 100%);
@@ -68,8 +68,8 @@ img {
   background-size: 90%;
   position: relative;
   padding-bottom: 5em;
-  overflow: hidden;
   animation: bg 1s ease-in-out;
+  overflow: hidden;
 }
 .header__hero-width {
   display: flex;
@@ -108,7 +108,7 @@ img {
 .header__hero-btn {
   border: none;
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-  padding: 0.5em 2em;
+  padding: 1em 2em;
   border-radius: 1.5em;
   font-size: 1rem;
   color: hsl(0, 0%, 100%);
@@ -162,7 +162,7 @@ main .container .services {
   margin: auto;
 }
 main .container .services__heading {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
   color: hsl(233, 26%, 24%);
 }
@@ -170,7 +170,8 @@ main .container .services__paragraph {
   display: flex;
   flex-direction: column;
   line-height: 1.5em;
-  padding: 1em 0 2em;
+  padding: 1.5em 0 2em;
+  font-size: 1.2rem;
   color: hsl(233, 8%, 62%);
 }
 main .container .services .products {
@@ -182,9 +183,9 @@ main .container .services .products article + article {
   padding-left: 1.45em;
 }
 main .container .services .products__title {
-  font-size: 1em;
+  font-size: 1.2rem;
   font-weight: 700;
-  padding: 1em 0;
+  padding: 1.5em 0;
   color: hsl(233, 26%, 24%);
 }
 main .container .services .products__paragraph {
@@ -195,14 +196,14 @@ main .container .services .products__paragraph {
 }
 main .latest-article {
   background-color: hsl(0, 0%, 98%);
-  padding: 3em 0;
+  padding: 4em 0;
 }
 main .latest-article .article {
   width: 75%;
   margin: auto;
 }
 main .latest-article .article .article__heading {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
   color: hsl(233, 26%, 24%);
 }
@@ -211,7 +212,7 @@ main .latest-article .article__wrapper {
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   padding: 2em 0;
-  gap: 1em;
+  gap: 1.5em;
 }
 main .latest-article .article__card {
   border: 0.1em solid hsl(0, 0%, 100%);
@@ -290,7 +291,7 @@ footer .footer__wrapper__nav .footer__socials .socials:hover {
 footer .footer__wrapper__nav .footer__btn {
   border: none;
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-  padding: 0.5em 2em;
+  padding: 1em 2em;
   border-radius: 1.5em;
   font-size: 1rem;
   color: hsl(0, 0%, 100%);
@@ -405,7 +406,7 @@ footer .footer__wrapper__nav .copyright {
   .header__hero-btn {
     border: none;
     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-    padding: 0.5em 2em;
+    padding: 1em 2em;
     border-radius: 1.5em;
     font-size: 1rem;
     color: hsl(0, 0%, 100%);

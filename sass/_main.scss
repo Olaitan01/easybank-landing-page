@@ -15,7 +15,7 @@ main {
       width: $width;
       margin: auto;
       &__heading {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: $bold-weight;
         color: $dark-blue;
       }
@@ -23,7 +23,8 @@ main {
         display: flex;
         flex-direction: column;
         line-height: 1.5em;
-        padding: 1em 0 2em;
+        padding: 1.5em 0 2em;
+        font-size: 1.2rem;
         color: $grayish-Blue;
       }
       .products {
@@ -35,9 +36,9 @@ main {
         }
 
         &__title {
-          font-size: 1em;
+          font-size: 1.2rem;
           font-weight: $bolder;
-          padding: 1em 0;
+          padding: 1.5em 0;
           color: $dark-blue;
         }
         &__paragraph {
@@ -51,21 +52,22 @@ main {
   }
   .latest-article {
     background-color: $very-Light-Gray;
-    padding: 3em 0;
+    padding: 4em 0 ;
     .article {
       width: $width;
       margin: auto;
       .article__heading {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: $bold-weight;
         color: $dark-blue;
+        
       }
       &__wrapper {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         justify-items: center;
         padding: 2em 0;
-        gap: 1em;
+        gap: 1.5em;
       }
 
      &__card{
