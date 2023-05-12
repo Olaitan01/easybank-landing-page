@@ -1,6 +1,6 @@
 # Frontend Mentor - Easybank landing page
 
-![Hosted Website Preview](./design/Easybank landing page.png)
+![Hosted Website Preview](./images/Easybank-landing-page.png)
 
 ## Feature
 
