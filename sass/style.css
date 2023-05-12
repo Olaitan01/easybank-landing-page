@@ -63,7 +63,7 @@ img {
 .header__hero {
   background-color: hsl(0, 0%, 98%);
   background-image: url(/images/bg-intro-desktop.svg);
-  background-position: 450% 80%;
+  background-position: 450% 60%;
   background-repeat: no-repeat;
   background-size: 90%;
   position: relative;
@@ -88,6 +88,7 @@ img {
   right: -8em;
   top: -7em;
   animation: mb-mockup 1s ease-in-out;
+  z-index: 0;
 }
 .header__hero-header, .header__hero-paragraph {
   display: flex;
