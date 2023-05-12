@@ -20,5 +20,5 @@
 - intall VSCODE LIVE SASS COMPILER EXTENSION BY GLENN MARK
 ## Hosted Link
 
-https://mellow-druid-e222a3.netlify.app/
+https://eazy-bank-page.netlify.app/
 
