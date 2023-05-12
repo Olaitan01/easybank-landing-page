@@ -15,8 +15,8 @@
 - VSCODE LIVE SASS COMPILER EXTENSION BY GLENN MARK
 
 ## To run on your local environment
-- Creat a different branch 
-- clone repo "git clone "
+- Create a different branch 
+- clone repo using "git clone "
 - intall VSCODE LIVE SASS COMPILER EXTENSION BY GLENN MARK
 ## Hosted Link
 
