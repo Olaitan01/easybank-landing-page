@@ -50,7 +50,7 @@ img {
 .header__request-btn {
   border: none;
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   border-radius: 1.5em;
   font-size: 1rem;
   color: hsl(0, 0%, 100%);
@@ -108,7 +108,7 @@ img {
 .header__hero-btn {
   border: none;
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   border-radius: 1.5em;
   font-size: 1rem;
   color: hsl(0, 0%, 100%);
@@ -155,14 +155,14 @@ img {
 
 main .container {
   background-color: hsl(220, 16%, 96%);
-  padding: 4em 0;
+  padding: 6em 0;
 }
 main .container .services {
   width: 75%;
   margin: auto;
 }
 main .container .services__heading {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
   color: hsl(233, 26%, 24%);
 }
@@ -183,7 +183,7 @@ main .container .services .products article + article {
   padding-left: 1.45em;
 }
 main .container .services .products__title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 1.5em 0;
   color: hsl(233, 26%, 24%);
@@ -282,7 +282,7 @@ footer .footer__wrapper__nav .footer__socials .socials {
   display: inline-block;
 }
 footer .footer__wrapper__nav .footer__socials .socials + .socials {
-  padding-left: 0.5em;
+  margin-left: 0.5em;
 }
 footer .footer__wrapper__nav .footer__socials .socials:hover {
   fill: hsl(136, 65%, 51%);
@@ -291,7 +291,7 @@ footer .footer__wrapper__nav .footer__socials .socials:hover {
 footer .footer__wrapper__nav .footer__btn {
   border: none;
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   border-radius: 1.5em;
   font-size: 1rem;
   color: hsl(0, 0%, 100%);
@@ -406,7 +406,7 @@ footer .footer__wrapper__nav .copyright {
   .header__hero-btn {
     border: none;
     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-    padding: 1em 2em;
+    padding: 0.8em 2em;
     border-radius: 1.5em;
     font-size: 1rem;
     color: hsl(0, 0%, 100%);

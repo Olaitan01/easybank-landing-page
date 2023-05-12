@@ -10,12 +10,12 @@
 main {
   .container {
     background-color: $light-grayish-Blue;
-    padding: 4em 0;
+    padding: 6em 0;
     .services {
       width: $width;
       margin: auto;
       &__heading {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: $bold-weight;
         color: $dark-blue;
       }
@@ -36,7 +36,7 @@ main {
         }
 
         &__title {
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           font-weight: $bolder;
           padding: 1.5em 0;
           color: $dark-blue;
