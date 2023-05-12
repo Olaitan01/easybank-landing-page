@@ -1,0 +1,140 @@
+@use "../sass/mixins" as *;
+@use "../sass/variable" as *;
+
+.header {
+  &__top {
+    @include flex;
+    padding: 1.3em 0;
+    width: $width;
+    margin: auto;
+    &__logo-container {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .burger-container{
+    display: none;
+   
+    .burger-btn{
+      border: none;
+      background-color: inherit;
+      .close-btn{
+        display: none;
+      }
+    }
+  }
+  &__navs-list {
+    a {
+      display: inline-block;
+      color: $grayish-Blue;
+      text-decoration: none;
+      font-size: 0.9rem;
+
+      & + a {
+        padding-left: 1.5em;
+      }
+
+      &:hover::after {
+        content: "";
+        border-bottom: 0.2em solid $lime-green;
+        display: block;
+        transform: translateY(1.9em);
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+  &__request-btn {
+    @include btn;
+
+    &:hover{
+      filter:brightness(1.2);
+      cursor: pointer;
+  }
+  }
+
+  &__hero {
+    background-color: $very-Light-Gray;
+    background-image: url(/images/bg-intro-desktop.svg);
+    background-position: 450% 80%;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    position: relative;
+    padding-bottom: 5em;
+    overflow: hidden;
+    animation: bg 1s ease-in-out;
+
+    &-width {
+      @include flex;
+      width: $width;
+      margin: auto;
+    }
+    &-content {
+      align-self: flex-start;
+      padding: 10em 0;
+      animation: content 1s ease-in-out;
+
+    }
+    &__img-container {
+      position: absolute;
+      right: -8em;
+      top: -7em;
+      animation: mb-mockup 1s ease-in-out;
+    }
+    &-header,
+    &-paragraph {
+      display: flex;
+      flex-direction: column;
+    }
+    &-header {
+      font-weight: $bold-weight;
+      line-height: 1em;
+      font-size: 3em;
+      color: $dark-blue;
+    }
+    &-paragraph {
+      padding: 1em 0 2em;
+      line-height: 1.5em;
+      font-size: 1em;
+      color: $grayish-Blue;
+    }
+    &-btn {
+      @include btn;
+      &:hover{
+        filter:brightness(1.2);
+        cursor: pointer;
+    }
+    }
+  }
+}
+
+@keyframes bg {
+  0%{
+    
+    background-position: 450% 200%;
+  }
+  100%{
+    background-position: 450% 80%;
+  }
+}
+
+@keyframes mb-mockup{
+  0%{
+    opacity: 0.5;
+  }
+  100%{
+opacity: 1;
+  }
+}
+
+@keyframes content {
+  0%{
+
+transform: translateX(-100em);
+opacity: 0.5;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

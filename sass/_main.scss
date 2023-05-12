@@ -1,0 +1,110 @@
+@use "../sass/mixins" as *;
+@use "../sass/variable" as *;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  .container {
+    background-color: $light-grayish-Blue;
+    padding: 4em 0;
+    .services {
+      width: $width;
+      margin: auto;
+      &__heading {
+        font-size: 1.5rem;
+        font-weight: $bold-weight;
+        color: $dark-blue;
+      }
+      &__paragraph {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5em;
+        padding: 1em 0 2em;
+        color: $grayish-Blue;
+      }
+      .products {
+        @include flex;
+        article {
+          & + article {
+            padding-left: 1.45em;
+          }
+        }
+
+        &__title {
+          font-size: 1em;
+          font-weight: $bolder;
+          padding: 1em 0;
+          color: $dark-blue;
+        }
+        &__paragraph {
+          font-size: 1rem;
+          line-height: 1.5em;
+          font-weight: $bold-weight;
+          color: $grayish-Blue;
+        }
+      }
+    }
+  }
+  .latest-article {
+    background-color: $very-Light-Gray;
+    padding: 3em 0;
+    .article {
+      width: $width;
+      margin: auto;
+      .article__heading {
+        font-size: 1.5rem;
+        font-weight: $bold-weight;
+        color: $dark-blue;
+      }
+      &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        padding: 2em 0;
+        gap: 1em;
+      }
+
+     &__card{
+        border: .1em solid $White;
+        background-color: $White;
+        border-radius: .5em;
+        .currency{
+            height: 24.3vh;
+            width: 100%;
+         }
+     }
+     
+     &__details{
+        padding: 1em 2em;
+     }
+     &__author{
+        font-size: .7rem;
+        color: $grayish-Blue;
+        font-weight: $bold-weight;
+    }
+    &__title{
+        color: $dark-blue;
+        font-weight: $very-bold-weight;
+        padding: .5em 0;
+    }
+     &__paragraph{
+        font-size: .8rem;
+        color: $grayish-Blue;
+        line-height: 1.5em;
+     }
+     &__img{
+        max-width: 100%;
+        border-radius: .5em;
+     }
+    
+     &__author{
+        font-size: .8em;
+     }
+     
+    }
+  }
+}

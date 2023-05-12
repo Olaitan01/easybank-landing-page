@@ -1,0 +1,206 @@
+@use "../sass/mixins" as *;
+@use "../sass/variable" as *;
+
+@media (width<40em) {
+  .header {
+    .burger-container {
+      display: block;
+      z-index: 1;
+      position: absolute;
+      right: 1em;
+      .burger-btn {
+        border: none;
+        background-color: inherit;
+        display: flex;
+        align-items: center;
+       
+        .close-btn {
+          display: none;
+        }
+      }
+    }
+    &__top {
+      width: 100%;
+      padding: 1.3em 0.5em;
+    }
+    &__navs {
+      display: none;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(#000000, 0.5);
+      position: absolute;
+      z-index: 1;
+      top: 4em;
+      margin: auto;
+      
+      &-list {
+        width: 90vw;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 0;
+        left: .8em;
+        top: 5em;
+        
+        a {
+          font-size: 1.5em;
+          padding: 0.5em 0;
+            color: $dark-blue;
+          & + a {
+            padding-left: 0;
+          }
+          &:hover::after {
+            content: "";
+            border-bottom: 0.1em solid $lime-green;
+            display: block;
+            transform: translateY(.2em);
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+    .header__request-btn {
+      display: none;
+    }
+
+    &__request-btn {
+      display: none;
+    }
+
+    &__hero {
+      background-image: url(/images/bg-intro-mobile.svg) !important;
+      background-position: 20% -15%;
+      background-size: 100%;
+
+      &-width {
+        flex-direction: column-reverse;
+        width: 100%;
+      }
+      &__img-container {
+        width: 100%;
+        right: -0em;
+        top: -8.5em;
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 25em 0 0;
+      }
+      
+      &-paragraph {
+        display: initial;
+        flex-direction: initial;
+      }
+      &-header {
+        font-size: 2em;
+      }
+      &-paragraph {
+        padding: 1em;
+      }
+      &-btn {
+        @include btn;
+        @include mobile-btn;
+      }
+    }
+  }
+  .services {
+    width: 100% !important;
+    padding: 0 1em;
+    text-align: center;
+  }
+  .products {
+    flex-direction: column;
+    article {
+      & + article {
+        padding: 2em 0em !important;
+      }
+    }
+  }
+
+  .latest-article {
+    .article {
+      width: 100% !important;
+      &__heading {
+        text-align: center;
+      }
+      article {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 1em;
+      }
+    }
+  }
+  .footer__wrapper {
+    flex-direction: column;
+    text-align: center;
+    align-items: center !important;
+    padding: 1.5em 0;
+  }
+  .footer__socials,
+  .copyright {
+    padding-top: 1em !important;
+  }
+  .footer__btn {
+    align-self: center !important;
+    @include mobile-btn;
+  }
+}
+
+/*Tablet screens*/
+@media (width>40em) and ( width<75em) {
+  
+  .header{
+    &__top{
+      width: 90%;
+    }
+    &__hero{
+    &-width{
+      width: 90%;
+    }
+    
+    &__img-container{
+      max-width: 60%;
+    }
+    }
+  }
+
+ main{
+ .container{
+  .services{
+    width: 90%;
+  }
+ } 
+
+ .latest-article{
+  .article{
+    width: 90%;
+
+    &__card{
+      .currency{
+        height: initial;
+      }
+    }
+  }
+ }
+ }
+
+ footer{
+  .footer__wrapper{
+    width: 90%;
+  }
+ }
+}
+
+@media (width>75em) and (width<87.5em) {
+  .article{
+   &__card{
+    .currency{
+      height: 10vh;
+    }
+   }
+  }
+}

@@ -1,0 +1,62 @@
+@use "../sass/mixins" as *;
+@use "../sass/variable" as *;
+
+footer{
+    background-color: $dark-blue;
+    padding-top:1em ;
+    .footer__wrapper{
+        @include flex;
+        width: $width;
+        margin: auto;
+        align-items: baseline;
+
+        &__nav{
+            display: flex;
+            flex-direction: column;
+
+            a{
+                display: flex;
+                flex-direction: column;
+                padding: 1em;
+                text-decoration: none;
+                color: $White;
+
+                &:hover{
+                    color: $lime-green;
+                }
+            }
+           .footer__socials{
+            padding-top: 5em;
+            .socials{
+                display: inline-block;
+                
+
+                &+ .socials{
+                    padding-left: .5em;
+                }
+                &:hover{
+                    fill: $lime-green;
+                    cursor: pointer;
+                    
+                }
+            }
+           }
+           .footer__btn{
+            @include btn;
+            width: 70% !important;
+            align-self: flex-end;
+
+            &:hover{
+                filter:brightness(1.2);
+                cursor: pointer;
+            }
+           }
+           .copyright{
+            color: $grayish-Blue;
+            font-size: 1rem;
+            text-align: left;
+            padding-top: 5em;
+           }
+        }
+    }
+}
